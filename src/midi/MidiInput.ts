@@ -171,7 +171,7 @@ export class MidiInput extends EventEmitter {
 	 */
 	static async enabled(): Promise<void> {
 		if (!MidiInput._isEnabled) {
-			await new Promise((done, error) => {
+			await new Promise<void>((done, error) => {
 				WebMidi.enable((e) => {
 					if (e) {
 						error(e)
