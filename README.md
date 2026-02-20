@@ -1,6 +1,6 @@
 ![Piano Logo with keyboard and knobs](./tone-piano.png)
 
-# @tonejs/piano
+# tonejs-salamander-piano
 
 Tone Piano is a Web Audio instrument which uses high-quality multi-sampled piano sounds provided by [Salamander Grand Piano](https://archive.org/details/SalamanderGrandPianoV3) 
 
@@ -11,7 +11,7 @@ It has up to 16 velocity levels across 88 keys (sampled every third note) of a Y
 Install the npm package:
 
 ```
-npm install --save @tonejs/piano
+npm install --save tonejs-salamander-piano
 ```
 
 Tone Piano requires Tone.js as a peer dependency (and webmidi to use MidiInput):
@@ -28,13 +28,13 @@ npm install --save tone webmidi
 Using CommonJS:
 
 ```js
-const Piano = require('@tonejs/piano');
+const Piano = require('tonejs-salamander-piano');
 ```
 
 Using ES6 modules:
 
 ```js
-import { Piano } from '@tonejs/piano'
+import { Piano } from 'tonejs-salamander-piano'
 ```
 
 ### Create and load samples
