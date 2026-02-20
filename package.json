@@ -1,33 +1,37 @@
 {
-	"name": "@tonejs/piano",
-	"version": "0.2.0",
+	"name": "tonejs-salamander-piano",
+	"version": "0.3.0",
 	"description": "Web Audio instrument using Salamander Grand Piano samples",
 	"repository": {
-		"url": "https://github.com/tambien/Piano"
+		"type": "git",
+		"url": "git+https://github.com/ezpn/tonejs-piano.git"
 	},
 	"browser": "build/Piano.js",
-	"main": "build/esm/Piano.js",
-	"module": "build/esm/Piano.js",
+	"main": "build/index.js",
+	"module": "build/index.js",
 	"type": "module",
 	"unpkg": "build/Piano.js",
-	"types": "build/esm/Piano.d.ts",
+	"types": "build/index.d.ts",
 	"scripts": {
 		"build": "tsc",
 		"prepare": "npm run build",
-		"increment": "npm version v$(semver --increment $(npm show @tonejs/piano version)) --git-tag-version=false --allow-same-version",
+		"increment": "npm version v$(semver --increment $(npm show tonejs-salamander-piano version)) --git-tag-version=false --allow-same-version",
 		"lint": "tslint --project tsconfig.json --fix",
 		"test": "karma start test/karma.conf.js",
 		"watch": "tsc --watch"
 	},
 	"files": [
 		"README.md",
-		"LICENSE",
+		"LICENSE.md",
 		"build",
-		"src",
-		"scripts"
+		"src"
 	],
 	"author": "Yotam Mann",
 	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/ezpn/tonejs-piano/issues"
+	},
+	"homepage": "https://github.com/ezpn/tonejs-piano#readme",
 	"devDependencies": {
 		"@types/chai": "^4.2.11",
 		"@types/mocha": "^7.0.2",
